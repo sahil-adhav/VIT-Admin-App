@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sahiladhav.vit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="VIT Admin"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.LoginMainActivity"></activity>
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".notice.DeleteNoticeActivity" />
+        <activity android:name=".faculty.UpdateTeacherActivity" />
+        <activity android:name=".faculty.AddTeacher" />
+        <activity android:name=".faculty.UpdateFaculty" />
+        <activity android:name=".UploadPdfActivity" />
+        <activity android:name=".UploadImage" />
+        <activity android:name=".UploadNotice" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
